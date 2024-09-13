@@ -1,0 +1,533 @@
+.headertwo {
+    padding: 30px 0;
+}
+
+.headertop-right {
+    & a {
+        border-radius: 13px;
+        border: 1px solid #4D4C52;
+        padding: 15px 20px;
+        display: inline-block;
+        margin-right: 12px;
+        @include font-18;
+        font-family: $font-1;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.7);
+        &:hover {
+            border: 1px solid $white;
+        }
+        &:last-child {
+            margin-right: 0;
+            & img {
+                margin-right: 12px;
+            }
+        }
+    }
+}
+
+.header-bottom-cards {
+    border-radius: 13px;
+    border: 1px solid #4D4C52;
+    background: linear-gradient(180deg, rgba(64, 65, 71, 0.36) 0%, rgba(64, 65, 71, 0.00) 100%);
+    padding: 18px 22px;
+    .nav_number {
+        border-radius: 48px;
+        background: #202425;
+        padding: 4px 6px;
+        @include font-14;
+        font-family: $font-1;
+        color: $white;
+    }
+    .item-percentes {
+        color: #2381C9;
+        @include font-14;
+        font-family: $font-1;
+    }
+    .item-leaf {
+        color: #2381C9;
+    }
+    .left-title {
+        color: $white;
+        @include font-14;
+        font-family: $font-1;
+    }
+    .pata {
+        color: #2381C9;
+        color: $white;
+        @include font-14;
+        font-family: $font-1;
+    }
+    .item-images {
+        width: 16px;
+        height: 16px;
+    }
+}
+.headertop-right a {
+    display: inline-flex;
+    align-items: center;
+}
+.breadcamp {
+    .bradcamp-item {
+       a{
+        color: rgba(255, 255, 255, 0.4);
+        font-family: $font-1;
+        font-size: 18px;
+        font-weight: 500;
+        &:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        span{
+            margin-right: 6px;
+        }
+        img{
+            max-width: 30px;
+        }
+       }
+    }
+    .active {
+        a{
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}
+
+.lordmain {
+    padding-bottom: 120px;
+    &-profile{
+        @include mmd{
+            flex-direction: column;
+        }
+        .left{
+            width: calc(100% - 290px);
+            @include mmd{
+                width: 100%;
+            }
+            @include sm{
+                flex-direction: column;
+            }
+            .lordmain-solbox{
+                //width: calc(100% - 290px);
+                @include sm{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &-watchlist{
+        max-width: 290px;
+        @include sm{
+            max-width: 100%;
+        }
+    }
+    .avater-info {
+        .avator-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 100px;
+            object-fit: cover;
+            margin-right: 24px;
+        }
+        .avater-title {
+            & h4 {
+                color: rgba(255, 255, 255, 9);
+                font-family: $font-1;
+                @include font-22;
+                font-weight: 600;
+            }
+            & img {
+                width: 14px;
+                height: 16px;
+            }
+            & p {
+                color: #68D391;
+                font-family: $font-1;
+                @include font-16;
+                font-weight: 500;
+                & span {
+                    color: #F90;
+                }
+            }
+        }
+        .social {
+            & a {
+                border: 1px solid rgba(77, 76, 82, 0.5);
+                border-radius: 100px;
+                background: linear-gradient(180deg, rgba(64, 65, 71, 0.30) 0%, rgba(64, 65, 71, 0.00) 100%);
+                width: 44px;
+                height: 44px;
+                line-height: 0;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 12px;
+                &:hover {
+                    border: 1px solid #4D4C52;
+                }
+                & img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+        .avater-progress {
+            padding-top: 4px;
+            .avator-count-1 {
+                color: #89BC57;
+                font-family: $font-1;
+                @include font-18;
+                font-weight: 700;
+            }
+            .avator-count-2 {
+                font-family: $font-1;
+                @include font-18;
+                font-weight: 700;
+                color: $white;
+            }
+        }
+        .progress {
+            margin-top: 5px;
+            height: 6px;
+            .progress-bar {
+                background-color: #89BC57;
+                height: 6px;
+            }
+        }
+    }
+    .lordmain-solbox {
+        max-width: 1200px;
+        width: 100%;
+        border-radius: 20px;
+        border: 1px solid rgba(77, 76, 82, 0.5);
+        background: linear-gradient(0deg, rgba(64, 65, 71, 0.24) -10.07%, rgba(64, 65, 71, 0.06) 32.77%, rgba(64, 65, 71, 0.00) 100%);
+        padding: 16px;
+    }
+    .webitems {
+        & a {
+            border-radius: 13px;
+            border: 1px solid rgba(77, 76, 82, 0.5);
+            background: linear-gradient(180deg, rgba(64, 65, 71, 0.30) 0%, rgba(64, 65, 71, 0.08) 50.12%, rgba(64, 65, 71, 0.00) 100%);
+            padding: 20px 16px;
+            color: rgba(255, 255, 255, 0.4);
+            margin-right: 10px;
+            width: 100%;
+            text-align: center;
+            @include lg{
+                padding-block: 10px;
+            }
+            @include mmd{
+                padding-block: 10px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            & svg {
+                margin-right: 10px;
+            }
+            &:hover {
+                border: 1px solid rgba(77, 76, 82, 0.9);
+            }
+        }
+    }
+    .webitems-price {
+        border: 1px solid rgba(77, 76, 82, 0.3);
+        margin-top: 37px;
+        border-radius: 13px;
+        @include lg{
+            margin-top: 10px;
+        }
+        @include mmd{
+            margin-top: 10px;
+        }
+    }
+    .single-item {
+        background: linear-gradient(180deg, rgba(64, 65, 71, 0.09) 0%, rgba(64, 65, 71, 0.02) 50.12%, rgba(64, 65, 71, 0.00) 100%);
+        padding: 25px 30px;
+        width: 100%;
+        text-align: center;
+        border-right: 1px solid rgba(77, 76, 82, 0.3);
+        @include lg{
+            padding: 20px 10px;
+        }
+        @include mmd{
+            padding: 20px 10px;
+        }
+        &:last-child {
+            border-right: 0;
+        }
+        & h5 {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.4);
+            text-align: center;
+            text-transform: uppercase;
+            @include lg{
+                font-size: 10px
+            }
+            @include mmd{
+                font-size: 8px;
+                padding-bottom: 0;
+            }
+        
+        }
+        & span {
+            @include font-16;
+            color: rgba(255, 255, 255, 0.9);
+            font-family: $font-1;
+            font-weight: 600;
+            text-align: center;
+            @include lg{
+                font-size: 10px;
+            }
+            @include mmd{
+                font-size: 10px;
+            }
+        }
+    }
+    .alert-box {
+        border: 1px solid rgba(77, 76, 82, 0.5);
+        padding: 16px;
+        border-radius: 20px;
+        & a {
+            padding: 11px 16px;
+            border-radius: 10px;
+            border: 1px solid rgba(77, 76, 82, 0.5);
+            background: linear-gradient(180deg, rgba(64, 65, 71, 0.30) 0%, rgba(64, 65, 71, 0.08) 50.12%, rgba(64, 65, 71, 0.00) 100%);
+            display: block;
+            text-align: center;
+            width: 100%;
+            color: rgba(255, 255, 255, 0.6);
+            font-family: $font-1;
+            @include font-14;
+            font-weight: 500;
+            & svg {
+                margin-right: 8px;
+            }
+            &:hover {
+                border: 1px solid rgba(77, 76, 82, 0.9);
+            }
+        }
+    }
+    .add-wrap {
+        position: relative;
+        border-radius: 20px;
+        border: 1px solid rgba(77, 76, 82, 0.5);
+        background: linear-gradient(0deg, rgba(64, 65, 71, 0.24) -10.07%, rgba(64, 65, 71, 0.06) 32.77%, rgba(64, 65, 71, 0.00) 100%);
+        padding: 16px;
+        .ads-box {
+            .ads {
+                color: rgba(255, 255, 255, 0.4);
+                @include font-14;
+                font-weight: 500;
+                border-radius: 8px;
+                border: 1px solid rgba(77, 76, 82, 0.5);
+                background: linear-gradient(180deg, rgba(64, 65, 71, 0.30) 0%, rgba(64, 65, 71, 0.08) 50.12%, rgba(64, 65, 71, 0.00) 100%);
+                text-align: center;
+                width: 35px;
+                right: 16px;
+            }
+            .catdog-profile {
+                padding: 0 0 20px;
+                border-bottom: 1px solid rgba(77, 76, 82, 0.5);
+                .catdog-avater {
+                    & img {
+                        max-width: 67.783px;
+                        height: 67.783px;
+                        border-radius: 100px;
+                        margin-right: 18px;
+                    }
+                }
+                & h4 {
+                    color: rgba(255, 255, 255, 0.7);
+                    font-family: $font-1;
+                    @include font-14;
+                    font-weight: 500;
+                }
+                & p {
+                    color: rgba(255, 255, 255, 0.7);
+                    font-family: $font-1;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .chart-with-socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            & a {
+                color: rgba(255, 255, 255, 0.6);
+                font-family: $font-1;
+                font-size: 12px;
+                font-weight: 500;
+                border-radius: 8px;
+                border: 1px solid rgba(77, 76, 82, 0.5);
+                background: linear-gradient(180deg, rgba(64, 65, 71, 0.30) 0%, rgba(64, 65, 71, 0.08) 50.12%, rgba(64, 65, 71, 0.00) 100%);
+                text-align: center;
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                &:first-child {
+                    flex: 1 1 auto;
+                }
+            }
+        }
+    }
+    .connect-wallet {
+        border-radius: 20px;
+        border: 1px solid rgba(77, 76, 82, 0.15);
+        background: linear-gradient(0deg, rgba(64, 65, 71, 0.24) -10.07%, rgba(64, 65, 71, 0.06) 32.77%, rgba(64, 65, 71, 0.00) 100%);
+        padding: 16px;
+        width: 100%;
+        max-width: 290px;
+        @include mmd{
+            max-width: 100%;
+        }
+        .tab-navs {
+            border-radius: 13px;
+            border: 1px solid #4D4C52;
+            padding: 6px;
+        }
+        
+        .nav-item {
+            flex-grow: 1;
+            text-align: center;
+            border: 0;
+        }
+        
+        .nav-link {
+            border-radius: 10px;
+            color: #FFF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            //opacity: 0.6;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 16px;
+
+        }
+        
+        .nav-link.active {
+            border-radius: 10px;
+            border: 1px solid #ec0000;
+            background:linear-gradient(180deg, rgb(189, 14, 5) 0%, rgb(234, 10, 10) 50.12%, rgb(249, 0, 0) 100%);
+        }
+
+        .sol-box {
+            border-radius: 13px;
+            border: 1px solid #4D4C52;
+            margin-block:14px;
+        }
+        
+        .sol-box .top {
+            padding: 8px;
+        }
+        
+        .sol-box .top p {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #FFF;
+            font-family: $font-1;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            opacity: 0.4;
+            padding-right: 24px;
+            position: relative;
+            z-index: 1;
+            margin-right: 24px;
+            cursor: pointer;
+        }
+        
+        .sol-box .top p:after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 2px;
+            width: 2px;
+            opacity: 0.1;
+            background: #FFF;
+            height: 13px;
+            z-index: -1;
+        }
+        .doularrow {
+            width: 30px;
+            height: 26px;
+            border-radius: 8px;
+            border: 1px solid #4D4C52;
+            background: linear-gradient(180deg, rgba(64, 65, 71, 0.30) 0%, rgba(64, 65, 71, 0.08) 50.12%, rgba(64, 65, 71, 0.00) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .numvalue span {
+            color: #FFF;
+            font-size: 12px;
+            font-weight: 500;
+            opacity: 0.4;
+            padding: 8px 10px;
+            flex-grow: 1;    
+            text-align: center;
+            border-top: 1px solid #4D4C52;
+            border-right: 1px solid #4D4C52;
+            background: linear-gradient(180deg, rgba(64, 65, 71, 0.18) 0%, rgba(64, 65, 71, 0.05) 50.12%, rgba(64, 65, 71, 0.00) 100%);
+            cursor: pointer;
+          transition: all .3s ease-in-out;
+        }
+        .numvalue span:hover {
+                background: linear-gradient(180deg, rgba(231, 232, 233, 0.3) 0%, rgba(64, 65, 71, 0.08) 50.12%, rgba(64, 65, 71, 0.00) 100%);
+       
+        }
+        .numvalue span:last-child {
+            border-right: 0;
+        }
+        .slippage{
+            color: #FFF;
+            font-family: $font-2 !important;
+            font-size: 12px !important;
+            font-style: normal;
+            font-weight: 400 !important;
+            line-height: normal;
+        }
+        .connect-wallet-btn{
+            p{
+                margin-top: 15px;
+                color: rgba(255, 255, 255, 0.40);
+                text-align: center;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                strong{
+                    color: rgba(255, 255, 255, 0.70);
+                    font-weight: 600;
+                }
+            }
+            a.btn{
+                border-radius: 10px;
+                background: #2381C9;            
+                padding: 10px 16px;
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+                display: block;
+                border-color: #2381C9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+
+        }
+    }
+}

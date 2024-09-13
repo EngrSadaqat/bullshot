@@ -1,0 +1,350 @@
+.finalize {
+    padding-bottom: 137px;
+    padding-top: 130px;
+    position: relative;
+    @include mmd {
+        padding-bottom: 70px;
+    }
+    @include sm {
+        padding-bottom: 49px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 137px;
+        background-image: url('..//img/bottom-shadow.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        z-index: -1;
+    }
+    .heading .wallet-btn button {
+        color: #FFF !important;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: capitalize;
+        opacity: 0.7;
+        border-radius: 13px;
+        padding: 16px 24px;
+        border: 1px solid #4D4C52 !important;
+        background: linear-gradient(180deg, rgba(64, 65, 71, 0.30) 0%, rgba(64, 65, 71, 0.00) 100%);
+    }
+    &-box {
+        background: url('../img/finalize-bg.png') no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding: 70px 58px;
+        margin-top: 30px;
+        border-radius: 30px;
+        border: 1px solid rgba(77, 76, 82, 0.25);
+        position: relative;
+        @include mmd {
+            padding: 50px 58px;
+        }
+        @include sm {
+            padding: 40px 20px;
+        }
+    }
+    &-title {
+        @include sm {
+            flex-direction: column;
+            & h1 {
+                text-align: center;
+                font-size: 25px !important;
+            }
+        }
+        h1 {
+            color: rgba(255, 255, 255, 0.9);
+            font-family: $font-1;
+            @include font-48;
+            font-style: normal;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+        & img {
+            @include sm {
+                width: 150px;
+            }
+        }
+    }
+    .finalize-wrap {
+        @include sm {
+            flex-direction: column;
+        }
+    }
+    &-list {
+        padding-right: 16px;
+        &:last-child {
+            padding-right: 0;
+        }
+        @include mmd {
+            padding-right: 0;
+            padding-bottom: 15px;
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+    &-btns {
+        border-radius: 13px;
+        border: 1px solid #4D4C52;
+        background: linear-gradient(180deg, rgba(64, 65, 71, 0.24) 0%, rgba(64, 65, 71, 0.08) 100%);
+        padding: 11px 20px;
+        @include font-20;
+        font-family: $font-1;
+        color: rgba(255, 255, 255, 0.8);
+        font-weight: 500;
+        display: inline-block;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: $primary;
+        }
+        & svg {
+            width: 24px;
+            margin-right: 14px;
+        }
+        @include lg {
+            font-size: 15px;
+        }
+    }
+    .allform {
+        max-width: 997px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 86px;
+        @include mmd {
+            margin-top: 40px;
+        }
+        &-top_border {
+            border-radius: 20px;
+            border: 1px solid rgba(77, 76, 82, 0.40);
+            padding: 22px 30px 30px;
+            margin-bottom: 16px;
+            position: relative;
+            @include sm {
+                padding: 16px;
+            }
+        }
+        &-bottom_border {
+            border-radius: 20px;
+            border: 1px solid rgba(77, 76, 82, 0.40);
+            padding: 22px 32px;
+            position: relative;
+            @include sm {
+                padding: 0 16px 16px;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 38px;
+                background-image: url('../img/bottom-border.png');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                height: 100%;
+                max-width: 840px;
+                width: 100%;
+                z-index: -1;
+                @include mmd {
+                    bottom: 27px;
+                    max-width: 600px;
+                }
+                @include sm {
+                    bottom: 20px;
+                    max-width: 330px;
+                }
+            }
+        }
+        label {
+            color: rgba(255, 255, 255, 0.70);
+            font-family: $font-1;
+            @include font-16;
+            font-style: normal;
+            font-weight: 500;
+            margin-bottom: 11px;
+            span {
+                color: #F45B5B;
+                padding-left: 4px;
+            }
+            @include sm {
+                padding-top: 16px;
+            }
+        }
+        &-text {
+            border-radius: 8px;
+            border: 1px solid rgba(77, 76, 82, 0.25);
+            background: linear-gradient(180deg, rgba(64, 65, 71, 0.06) 0%, rgba(64, 65, 71, 0.00) 100%);
+            padding: 27px 20px;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: $font-1;
+            @include mmd {
+                padding: 18px 20px;
+            }
+            &:focus {
+                box-shadow: none;
+                border: 1px solid rgba(77, 76, 82, 0.5);
+            }
+        }
+        &-description {
+            border-radius: 8px;
+            border: 1px solid rgba(77, 76, 82, 0.25);
+            background: linear-gradient(180deg, rgba(64, 65, 71, 0.06) 0%, rgba(64, 65, 71, 0.00) 100%);
+            padding: 27px 20px;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: $font-1;
+            min-height: 218px;
+            @include mmd {
+                min-height: 221px;
+            }
+            &:focus {
+                box-shadow: none;
+                border: 1px solid rgba(77, 76, 82, 0.5);
+            }
+        }
+        &-filupload {
+            position: relative;
+            width: 100%;
+            height: 225px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 0.949px dashed rgba(77, 76, 82, 0.25);
+            background: linear-gradient(180deg, rgba(64, 65, 71, 0.06) 0%, rgba(64, 65, 71, 0.00) 100%);
+            input[type=file] {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                cursor: pointer;
+            }
+            & svg path {
+                fill: rgba(255, 255, 255, 0.4);
+            }
+            & span {
+                color: rgba(255, 255, 255, 0.4);
+                font-family: $font-1;
+                @include font-24;
+                font-weight: 500;
+                margin-left: 10px;
+            }
+        }
+        .allform-top_text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+        &-formbutton {
+            & button {
+                border-radius: 8px;
+                border: 1px solid rgba(77, 76, 82, 0.25);
+                background: linear-gradient(180deg, rgba(64, 65, 71, 0.06) 0%, rgba(64, 65, 71, 0.00) 100%);
+                padding: 30px 20px;
+                color: rgba(255, 255, 255, 0.4);
+                @include font-18;
+                & svg {
+                    margin-right: 12px;
+                }
+                &:hover {
+                    background: linear-gradient(90deg, rgba(64, 65, 71, 0.2) 0%, rgba(64, 65, 71, 0) 100%) !important;
+                    border: 1px solid rgba(77, 76, 82, 0.6) !important;
+                    color: $primary !important;
+                }
+                &:hover svg path {
+                    fill: $primary;
+                }
+                @include md {
+                    padding: 25px 12px;
+                }
+                @include sm {
+                    padding: 20px 10px;
+                    margin-bottom: 12px;
+                    font-size: 14px;
+                }
+            }
+            .allform-mobile_res {
+                @include sm {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    gap: 12px;
+                }
+                .button-wrap {
+                    @include sm {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+    .allform-connect_btn {
+        border-radius: 13px;
+        background-color: $primary;
+        padding: 15px 20px;
+        color: $white;
+        font-family: $font-1;
+        @include font-18;
+        font-weight: 500;
+        border: 1px solid transparent !important;
+        &:hover {
+            background: linear-gradient(90deg, rgba(64, 65, 71, 0.2) 0%, rgba(64, 65, 71, 0) 100%) !important;
+            border: 1px solid rgba(77, 76, 82, 0.6) !important;
+            color: $primary !important;
+        }
+        & svg {
+            margin-right: 12px;
+        }
+        &:hover svg path {
+            fill: $primary;
+        }
+    }
+    .allform-token {
+        border-radius: 13px;
+        border: 1px solid #4D4C52;
+        background: linear-gradient(180deg, rgba(64, 65, 71, 0.30) 0%, rgba(64, 65, 71, 0.00) 100%);
+        color: rgba(255, 255, 255, 0.4);
+        padding: 15px 24px;
+        font-family: $font-1;
+        &:hover {
+            background: linear-gradient(90deg, rgba(64, 65, 71, 0.2) 0%, rgba(64, 65, 71, 0) 100%) !important;
+            border: 1px solid rgba(77, 76, 82, 0.6) !important;
+            color: $primary !important;
+        }
+    }
+    .allform-agree {
+        & p {
+            color: rgba(255, 255, 255, 0.7);
+            font-family: $font-1;
+            @include font-14;
+            font-weight: 400;
+            @include sm {
+                padding-left: 10px;
+            }
+            & a {
+                color: rgba(255, 255, 255, 0.6);
+                text-decoration: underline !important;
+                display: inline-block;
+                padding: 0 8px;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+        .form-check-input[type=checkbox] {
+            width: 14px;
+            height: 14px;
+            border-radius: 0;
+            padding: inherit;
+            border: 1px solid #7F7F7F;
+            background-color: transparent;
+            &:focus {
+                box-shadow: none;
+                border: 1px solid $primary;
+            }
+        }
+    }
+}

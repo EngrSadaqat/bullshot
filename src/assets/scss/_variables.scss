@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+    font-family: "General-Sans";
+    src: url('../fonts/GeneralSans-Light.ttf');
+}
+@font-face {
+    font-family: "General-Sans";
+    src: url('../fonts/GeneralSans-Regular.ttf');
+}
+@font-face {
+    font-family: "General-Sans";
+    src: url('../fonts/GeneralSans-Medium.ttf');
+}
+@font-face {
+    font-family: "General-Sans";
+    src: url('../fonts/GeneralSans-Semibold.ttf');
+}
+@font-face {
+    font-family: "General-Sans";
+    src: url('../fonts/GeneralSans-Bold.ttf');
+};
+
+@import url('https://fonts.cdnfonts.com/css/general-sans');
+$font-1: 'General Sans';
+$font-2:"Inter", sans-serif;
+$white:#fff;
+$black:#000;
+$primary: #15ACFF;
+$secondary: #050505;
+$text:#C0C3C5;
+$heading: $white;
+$border:#4B4B4B;
+$bg:#070707;
+:root {
+    scroll-behavior: auto !important;
+}

@@ -1,0 +1,23 @@
+.afiliate{
+    .refaral-bottom{
+        .refarel-table{
+            .table-item{
+                .item{
+                    width: 25%;
+                }
+                .actions{
+                    background: transparent;
+                    border: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .table-wrapper .table {
+       @include mmd{
+        min-width: 767px;
+       }
+    }
+
+}
